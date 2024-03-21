@@ -7,6 +7,7 @@ import { LuMessageSquare } from "react-icons/lu";
 import instagramLogo from "../src/assets/instagram_logo.png";
 import userIcon from "../src/assets/user_icon.png";
 import { MdOutlineAmpStories } from "react-icons/md";
+import { Content } from "./Components/Content";
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
         </p>
       </div>
       {/* Top content on mobile */}
-      <div className="h-32 p-2 text-slate-300 md:hidden bg-gradient-to-r from-blue-700 to-blue-900">
+      <div className="fixed top-0 w-full h-32 p-2 text-slate-300 md:hidden bg-gradient-to-r from-blue-700 to-blue-900">
         <div className="flex items-center justify-between py-1">
           <p>
             <img src={userIcon} width={32} height={32} alt="User icon" />
@@ -43,15 +44,17 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className=" md:h-[calc(100vh-32px)] flex">
+      <div className="flex">
         {/* Sidebar */}
         <Sidebar />
         {/* Content */}
-        <div className="w-full md:w-3/4 lg:w-4/5">Content</div>
+        <div className="w-full p-4 mt-32 md:mt-0 md:w-3/4 lg:w-4/5">
+          <Content />
+        </div>
       </div>
 
       {/* Bottom navigation on mobile */}
-      <div className="fixed bottom-0 left-0 w-full text-center md:hidden">
+      <div className="fixed bottom-0 left-0 w-full text-center md:hidden bg-slate-50">
         <nav className="flex items-center justify-around list-none">
           <SidebarItem
             tab={"tab0"}
