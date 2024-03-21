@@ -3,5 +3,5 @@
 @import "tailwindcss/utilities";
 
 body {
-  @apply font-sans bg-gray-900 text-slate-300;
+  @apply font-sans bg-gray-100;
 }
