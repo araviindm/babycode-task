@@ -37,9 +37,9 @@ export function BuyNow() {
         </div>
       </div>
       <div className="flex items-center justify-between">
-        <p className="mt-1 font-bold text-ss">Only @ ₹299 </p>
+        <p className="mt-1 mb-2 font-bold text-ss">Only @ ₹299 </p>
       </div>
-      <button className="absolute right-0 flex p-2 text-gray-100 bg-blue-700 bottom-1 rounded-l-3xl">
+      <button className="absolute right-0 flex p-2 mb-2 text-gray-100 bg-blue-700 bottom-1 rounded-l-3xl">
         <p>Buy Now</p>
         <p className="mx-1">
           <MdOutlineArrowCircleRight size={24} />
