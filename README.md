@@ -1,6 +1,6 @@
 # Babycode Task
 
-## To run the locally
+## To run locally
 
 ```bash
 npm i
